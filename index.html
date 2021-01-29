@@ -60,7 +60,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width"  name="">
+                    <input id="economy-count" class="inp-style inp-width"  name="" value="0">
                 </div>
                 <div>
                     <button id="economy-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
@@ -104,6 +104,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
     </section>
+    <script>
+        document.getElementById('economy-increase').addEventListener('click', function () {
+                const economyInput = document.getElementById('economy-count');
+                const economyCount = parseInt(economyInput.value);
+                const economyNewCount = economyCount + 1;
+                economyInput.value = economyNewCount;
+                
+            });
+    </script>
 
     <!--Thank You-->
     <!--Thank You-->
